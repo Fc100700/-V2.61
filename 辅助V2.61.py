@@ -408,7 +408,7 @@ def Information_1():  # 系统信息
 
 win = ttkbootstrap.Window()  # 利用ttk库创建tk窗口
 win.geometry('600x400+660+340')  # 窗口大小（600x400）
-win.iconbitmap("./image/window.ico")
+win.iconbitmap("./window.ico")
 win.resizable(False, False)  # 窗口大小不可改变
 win.title("Fuchen")
 # win.attributes("-alpha", 1)  # 窗口透明度
@@ -431,7 +431,7 @@ filemenu1.add_cascade(label='版本更新', command=gx)
 menubar.add_cascade(label='设置', menu=filemenu1)
 menubar.add_cascade(label='工具', menu=filemenu2)
 win.config(menu=menubar)  # 创建菜单
-image = tk.PhotoImage(file='./image/Background/bj.gif')  # 左上角
+image = tk.PhotoImage(file='./bj.gif')  # 左上角
 theLabel = tk.Label(win, textvariable=var, justify=tk.LEFT, font=('黑体', 15))  # 显示时间
 theLabel.pack()  # 绘制标签 时间标签
 theLabel.place(x=110, y=280)
